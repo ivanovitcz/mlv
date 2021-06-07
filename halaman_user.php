@@ -60,12 +60,20 @@ include 'koneksi.php';
 
       <nav class="nav-menu d-none d-lg-block">
         <ul>
+<<<<<<< HEAD
           <li class="active"><a href="halaman_user.php">Home</a></li>
           <li><a href="halaman_user.php#menu">Menu</a></li>
           <li><a href="halaman_user.php?halaman=keranjang">Keranjang</a></li>
           <!-- <li><a href="halaman_user.php?halaman=transaksi">Transaksi</a></li> -->
           <li><a href="halaman_user.php#contact">Contact Us</a></li>
           <li class="book-a-table text-center"><a href="#pesan">Pesan Makanan</a></li>
+=======
+          <li class="<?php if(!isset($_GET['halaman'])) { echo "active"; } ?>" ><a href="halaman_user.php">Home</a></li>
+          <li class="<?php if(($_GET['halaman'] == "menu")) { echo "active"; } ?>"><a href="halaman_user.php?halaman=menu">Menu</a></li>
+          <li class="<?php if(($_GET['halaman'] == "keranjang")) { echo "active"; } ?>"><a href="halaman_user.php?halaman=keranjang">Keranjang</a></li>
+          <!-- <li><a href="halaman_user.php?halaman=transaksi">Transaksi</a></li> -->
+          <li class="<?php if(($_GET['halaman'] == "contact")) { echo "active"; } ?>"><a href="halaman_user.php?halaman=contact">Contact Us</a></li>
+>>>>>>> ce39603f86a18b523e1d548d31a177d2101e3408
         </ul>
       </nav><!-- .nav-menu -->
 
@@ -119,6 +127,7 @@ include 'koneksi.php';
         </div>
     </section>
     <!-- End About Section -->
+<<<<<<< HEAD
     <!-- ======= Menu Section ======= -->
     <section id="harga" class="menu">
       <div class="container">
@@ -236,6 +245,22 @@ include 'koneksi.php';
     } else if($_GET['halaman']=='transaksi') {
       include 'transaksi.php';
     }?>
+=======
+    <?php }
+    else if($_GET['halaman']=='menu'){
+      include 'menu.php';
+    }
+    else if($_GET['halaman']=='keranjang') {
+      include 'keranjang.php';
+    }
+    else if($_GET['halaman']=='transaksi') {
+      include 'transaksi.php';
+    }
+    else if($_GET['halaman']=='contact') {
+      include 'contact.php';
+    }
+    ?>
+>>>>>>> ce39603f86a18b523e1d548d31a177d2101e3408
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->

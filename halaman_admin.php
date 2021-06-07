@@ -164,7 +164,11 @@ $koneksi = mysqli_connect("localhost","root","","akac");
         }
         else
         {
+<<<<<<< HEAD
           include 'home.php';
+=======
+          include 'home_admin.php';
+>>>>>>> ce39603f86a18b523e1d548d31a177d2101e3408
         }
         ?>
       </div>
