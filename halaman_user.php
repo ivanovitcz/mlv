@@ -102,6 +102,15 @@ include 'koneksi.php';
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
         <div class="container-fluid">
+        <?php 
+          if(isset($_GET['alert'])){
+            if($_GET['alert'] == "gagal") {
+              echo "<div class='alert alert-danger text-center'>Gagal!</div>";
+            } else if($_GET['alert'] == "sukses") {
+              echo "<div class='alert alert-success text-center'>Sukses Pesan, Silakan Check Email Anda!</div>";
+            }
+          }
+        ?>
             <div class="section-title">
                 <h2>Anisha Klape<span>rtart and Cake</span></h2>
                 <p>
@@ -130,6 +139,9 @@ include 'koneksi.php';
     }
     else if($_GET['halaman']=='contact') {
       include 'contact.php';
+    } 
+    else if($_GET['halaman']=='checkout') {
+      include 'checkout.php';
     }
     ?>
   </main><!-- End #main -->

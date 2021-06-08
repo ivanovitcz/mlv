@@ -96,7 +96,7 @@ $jumlah_isi_keranjang = count($_SESSION['keranjang']);
         <div class="row justify-content-end">
           <div class="col-4 text-right">
             <input type="submit" class="btn btn-primary" value="Update Keranjang">
-            <a class="btn btn-warning text-white" href="checkout.php">Check Out</a>
+            <a class="btn btn-warning text-white" href="halaman_user.php?halaman=checkout">Check Out</a>
           </div>
         </div>
           

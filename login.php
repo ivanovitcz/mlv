@@ -90,7 +90,7 @@ $koneksi = mysqli_connect("localhost","root","","akac");
 
     <div class="container-fluid">
         <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-4">
                     <!-- ======= Menu Section ======= -->
                 <section id="menu" class="menu">
                     <form method="post" enctype="multipart/form-data">
